@@ -80,7 +80,7 @@ This would create the output_plot.png.
 Let's say that we want to visualise genomic differences between four genome assemblies: A.fa, B.fa, C.fa, and D.fa. Further, we want to visualsize the genomes in the order A > B > C > D. Then, following steps are involved in visualising structural rearrangements between these genomes using plotsr:
 
 #### Step 1: Align the genomes
-* Genomes need to aligned using a whole-genome alignment tool. Here, we align the genomes using [minimap2](https://github.com/lh3/minimap2) and index the alignment BAM file using [samtools](https://www.htslib.org/download/): 
+* Genomes need to be aligned using a whole-genome alignment tool. Here, we align the genomes using [minimap2](https://github.com/lh3/minimap2) and index the alignment BAM file using [samtools](https://www.htslib.org/download/): 
 ```
 # Align genomes
 minimap2 -ax asm5 -t 4 --eqx A.fa B.fa \
